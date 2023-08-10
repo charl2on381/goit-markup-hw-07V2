@@ -1084,6 +1084,71 @@ input.footer-input::placeholder {
   right: 16px;
   color: var(--main-background-color);
 }
+
+/* contacts  */
+.title-contacts {
+  color: var(--color-navy-blue-modal);
+}
+
+.title-contacts-list {
+  font-size: 40px;
+}
+
+.link-contacts {
+  font-size: 30px;
+  color: var(--color-ocean);
+}
+
+@media only screen and (min-width: 1158px) {
+
+  .link-contacts:hover,
+  .link-contacts:focus {
+    color: var(--color-iris);
+  }
+}
+
+.cont-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 50px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cont-list {
+    justify-content: space-between;
+  }
+}
+
+.list-cont {
+  width: 300px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .cont-list {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.icon-list-contacts {
+  fill: var(--color-navy-blue-modal);
+  margin-bottom: 5px;
+}
+
+.list-cont {
+  transition: transform var(--animation);
+}
+
+.list-cont:hover {
+  transform: scale(1.1);
+}
+
+.iframe-card {
+  width: 100%;
+}
 /**
  |============================
  | Media
