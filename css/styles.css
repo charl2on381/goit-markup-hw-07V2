@@ -1087,7 +1087,7 @@ input.footer-input::placeholder {
 
 /* contacts  */
 .title-contacts {
-  color: var(--color-navy-blue-modal);
+  color: var(--text-color);
 }
 
 .title-contacts-list {
@@ -1096,14 +1096,14 @@ input.footer-input::placeholder {
 
 .link-contacts {
   font-size: 30px;
-  color: var(--color-ocean);
+  color: var(--accent-color);
 }
 
 @media only screen and (min-width: 1158px) {
 
   .link-contacts:hover,
   .link-contacts:focus {
-    color: var(--color-iris);
+    color: var(--accent-hover-color);
   }
 }
 
@@ -1134,12 +1134,12 @@ input.footer-input::placeholder {
 }
 
 .icon-list-contacts {
-  fill: var(--color-navy-blue-modal);
+  fill: var(--text-color);
   margin-bottom: 5px;
 }
 
 .list-cont {
-  transition: transform var(--animation);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-cont:hover {
