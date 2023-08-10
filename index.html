@@ -426,7 +426,9 @@
             </li>
           </ul>
         </div>
-        <div class="footer-sub">
+
+        <!-- Method 1 -->
+        <!-- <div class="footer-sub">
           <p class="text-media-footer">Subscribe</p>
           <form class="footer-form">
             <label>
@@ -443,6 +445,22 @@
                 <use href="./images/icons.svg#icon-fly"></use>
               </svg>
             </button>
+          </form>
+        </div> -->
+        <!--  -->
+
+        <div class="footer-subscribe">
+          <h3 class="footer-title">Subscribe</h3>
+          <form action="#" method="POST" name="subscribe_form" class="subscribe-input">
+            <label class="label-email" for="mail"></label>
+        
+            <input class="mail-field" type="e-mail" name="email" id="mail" required placeholder="E-mail" />
+            <button type="submit" class="submit-button">Subscribe
+              <svg class="subscribe-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+        
           </form>
         </div>
       </div>

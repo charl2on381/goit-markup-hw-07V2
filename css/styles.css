@@ -9,6 +9,9 @@
   --border-custom-color: #8e8f99;
   --backdrop: #fcfcfc;
   --hover-icon: #31d0aa;
+  --primary-accent-color: #2e2f42;
+  --secondary-accent-color: #404bbf;
+  --primary-white-color: #ffffff;
 }
 
 body {
@@ -681,7 +684,7 @@ input[type='checkbox']:checked + label > span {
   display: flex;
   padding-bottom: 16px;
 }
-.footer-sub {
+/* .footer-sub {
   display: flex;
   flex-direction: column;
 }
@@ -724,7 +727,114 @@ input.footer-input::placeholder {
   border: none;
   background: var(--accent-color);
   cursor: pointer;
+} */
+
+.footer-title {
+  color: var(--primary-white-color);
+
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
+
+.footer-subscribe {
+
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-input {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.mail-field::placeholder {
+  font-size: 12px;
+
+}
+
+.mail-field {
+  display: block;
+  width: 264px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid var(--primary-white-color);
+  border-radius: 4px;
+  background: var(--primary-accent-color);
+  color: var(--primary-white-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-field:hover,
+.mail-field:focus {
+  border: 1px solid var(--secondary-accent-color);
+
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  height: 44px;
+  color: var(--primary-white-color);
+  border-radius: 4px;
+  background: var(--iris);
+  border-radius: 4px;
+  border: none;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.submit-button:hover,
+.submit-button:focus {
+  cursor: pointer;
+  background-color: var(--accent-hover-color);
+  color: var(--primary-white-color);
+
+}
+
+.subscribe-icon-send::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color:var(--primary-white-color);
+  gap: 16px;
+}
+
+.subscribe-icon-send {
+  margin-left: 16px;
+  fill: currentColor;
+}
+
+
+
+
+.label-email {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
 /**
  |============================
  | Portfolio-page filter
