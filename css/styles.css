@@ -192,6 +192,28 @@ img {
 .nav:hover {
   color: var(--accent-hover-color);
 }
+
+.header-address-mail {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header-address-mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-address-phone {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header-address-phone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* .current::after {
   position: absolute;
   left: 0;
