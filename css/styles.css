@@ -68,7 +68,9 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
-  width: 100%;
+  /* width: 100%; */
+  min-width: 428px;
+  max-width: 1158px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
 }
@@ -1047,8 +1049,8 @@ input.footer-input::placeholder {
   display: flex;
   position: relative;
   align-items: center;
-  width: 32px;
-  height: 22px;
+  width: 16px;
+  height: 14px;
 }
 .burger-menu span {
   width: 32px;
