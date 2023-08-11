@@ -1053,7 +1053,7 @@ input.footer-input::placeholder {
   height: 14px;
 }
 .burger-menu span {
-  width: 32px;
+  width: 16px;
   height: 3px;
   border-radius: 1px;
   background-color: var(--text-color);
