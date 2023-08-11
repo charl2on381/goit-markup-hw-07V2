@@ -72,6 +72,8 @@ img {
   padding: 0 15px 0 15px;
   margin: 0 auto;
 }
+
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -85,6 +87,9 @@ img {
   flex-shrink: 0;
   margin-right: 76px;
 }
+
+
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -104,6 +109,7 @@ img {
   justify-content: center;
   gap: 40px;
 }
+
 .nav {
   flex-direction: column;
   font-weight: 500;
@@ -118,6 +124,49 @@ img {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav.current::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background: var(--secondary-accent-color);
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+
+}
+
+.nav::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background: var(--secondary-accent-color);
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+
+}
+
+.nav:hover::after,
+.nav:focus::after {
+  opacity: 1;
+
+}
+
+.nav:hover,
+.nav:focus,
+.current-page {
+  color: var(--secondary-accent-color);
+}
+
 .main-container {
   display: flex;
   align-items: center;
@@ -143,7 +192,7 @@ img {
 .nav:hover {
   color: var(--accent-hover-color);
 }
-.current::after {
+/* .current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -156,7 +205,7 @@ img {
 }
 .current {
   color: var(--accent-hover-color);
-}
+} */
 /**
  |============================
  | Section-1
@@ -407,6 +456,10 @@ input[type='checkbox']:checked + label > span {
   border: none;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover {
+  background-color: var(--accent-hover-color);
 }
 /**
  |============================
@@ -876,7 +929,8 @@ input.footer-input::placeholder {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filter:hover,
-.button-filter:focus {
+.button-filter:focus,
+.active-filter {
   color: var(--main-background-color);
   background-color: var(--accent-hover-color);
   border: 1px solid transparent;
