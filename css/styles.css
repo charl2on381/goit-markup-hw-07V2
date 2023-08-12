@@ -1269,6 +1269,27 @@ input.footer-input::placeholder {
       url(../images/hero-bg-mobile.jpg);
   }
   /* Portfolio */
+    .header-address-mail {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  
+    .header-address-mail-icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+  
+    .header-address-phone {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  
+    .header-address-phone-icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   .section-filter {
     padding: 48px 0;
   }
