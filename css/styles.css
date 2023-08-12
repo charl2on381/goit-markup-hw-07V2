@@ -785,6 +785,7 @@ input[type='checkbox']:checked + label > span {
   border: 1px solid var(--main-background-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 input.footer-input::placeholder {
   color: var(--main-background-color);
